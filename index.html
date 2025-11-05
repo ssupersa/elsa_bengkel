@@ -1,221 +1,299 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Bengkel Nugraha</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bengkel Nugrraha</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
+  <!-- ===== NAVBAR ===== -->
   <header>
-    <h1>Bengkel Online Nugraha</h1>
-    <p>Dari Layar ke Jalan, Solusi Tepat Untuk Masalah Kendaraan Anda!</p>
+    <nav class="navbar">
+      <h1 class="logo">Bengkel Nugraha</h1>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#layanan">Layanan</a></li>
+        <li><a href="#booking">Booking</a></li>
+        <li><a href="#lokasi">Lokasi</a></li>
+        <li><a href="#review">Review</a></li>
+        <li><a href="#tentang">Tentang Kami</a></li>
+      </ul>
+      <div class="menu-toggle" id="menuToggle">☰</div>
+    </nav>
   </header>
 
-  <div class="menu-toggle">☰ Menu</div>
-  <nav>
-    <a href="#home">Beranda</a>
-    <a href="#layanan">Layanan</a>
-    <a href="#booking">Booking</a>
-    <a href="#lokasi">Lokasi</a>
-    <a href="#review">Review</a>
-    <a href="#tentang">Tentang</a>
-  </nav>
-
-  <section id="home">
-    <div class="card">
-      <h2>Selamat Datang di Bengkel Online Nugraha</h2>
-      <p>Jika Kendaraan mu ada masalah? Ingatlah Bengkel Nugraha!</p>
-      <p>Bengkel Nugraha berdiri sejak tahun 1991. Kami dikenal dengan pelayanan jujur, harga yang bersahabat, dan kualitas perbaikan yang terpercaya. Dengan pengalaman lebih dari tiga dekade, kami berkomitmen memberikan solusi terbaik untuk setiap masalah kendaraan anda, mulai dari servis ringan, perawatan rutin, hingga perbaikan berat dan panggilan darurat ke lokasi pelanggan.</p>
-      <p>Kami memahami bahwa masalah kendaraan bisa datang kapan saja.Karena itu, Bengkel Nugraha Online hadir sebagai bentuk inovasi digital untuk memudahkan pelanggan menghubungi kami dengan cepat dan mudah, di mana pun dan kapan pun dibutuhkan. Dengan layanan ini, kami ingin selalu hadir lebih dekat dengan pelanggan untuk  memberikan rasa aman dan nyaman dalam setiap perjalanan Anda.</p>
-      <p>Solusi Cepat, Tepat, dan Terpercaya Bersama Bengkel Nugraha</p>
-    </div>
-  </section>
-
-  <section id="layanan">
-    <div class="card">
-      <h2>⚙️ Layanan & Harga</h2>
-      <div class="grid-layanan">
-        <div class="item-layanan">
-          <h3>Service Ringan</h3>
-          <p>Rp150.000 - Rp250.000</p>
-        </div>
-        <div class="item-layanan">
-          <h3>Service Berat</h3>
-          <p>Rp300.000 - Rp2.000.000</p>
-        </div>
-        <div class="item-layanan">
-          <h3>Ganti Oli</h3>
-          <p> Rp100.000 - Rp350.000</p>
-        </div>
-        <div class="item-layanan">
-          <h3>Panggilan Darurat</h3>
-          <p>Rp50.000</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
- <section id="booking">
-  <div class="card">
-    <h2>📝 Form Booking Service</h2>
-    <form id="bookingForm">
-      <label>Nama</label>
-      <input type="text" id="nama" placeholder="Masukkan nama Anda" required>
-
-      <label>No. HP</label>
-      <input type="tel" id="hp" placeholder="Masukkan nomor HP" required>
-
-      <label>Jenis Layanan</label>
-      <select id="layanan" required>
-        <option value="">--Pilih Layanan--</option>
-        <option value="Service Ringan">Service Ringan</option>
-        <option value="Service Berat">Service Berat</option>
-        <option value="Ganti Oli">Ganti Oli</option>
-        <option value="Panggilan Darurat">Panggilan Darurat</option>
-      </select>
-
-      <label>Catatan </label>
-      <textarea id="catatan" placeholder="Tulis catatan Anda" required></textarea>
-
-      <label>Lokasi Penjemputan</label>
-      <textarea id="lokasi" placeholder="Tulis lokasi kendaraan Anda" required></textarea>
-
-      <button type="submit"> Kirim Booking</button>
-    </form>
-  </div>
-</section>
-
-<section id="lokasi">
-  <div class="card">
-    <h2>📍 Lokasi Bengkel</h2>
-    <p>Jl. Garut - Tasikmalaya, Cikunir Kabupaten Tasikmalaya</p>
-    <div class="map-container">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.1344782746064!2d108.15192599999999!3d-7.339160000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f5784d090344b%3A0xee1809ff39b25be5!2sNugraha%20Motor%20-%20Bengkel%20Mobil!5e1!3m2!1sen!2sid!4v1760164606292!5m2!1sen!2sid"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
+  <!-- ===== BERANDA ===== -->
+ <section id="beranda" class="hero">
+  <img src="https://images.unsplash.com/photo-1576502200916-3808e07386a5?auto=format&fit=crop&w=1350&q=80" alt="Bengkel" />
+  <div class="hero-text">
+    <h2 data-animate>Perawatan & Service Motor Terpercaya</h2>
+    <p data-animate>Kami siap membantu kendaraanmu tetap prima setiap hari!</p>
+    <a href="#booking" class="btn" data-animate>Booking Sekarang</a>
   </div>
 </section>
 
 
-  <section id="review">
-    <div class="card">
-      <h2>⭐ Review Pelanggan</h2>
-      <form id="reviewForm">
-        <label>Nama</label>
-        <input type="text" id="reviewName" placeholder="Masukkan nama Anda" required>
-
-        <label>Rating</label>
-        <div class="stars" id="starRating">
-          <span data-value="1">★</span>
-          <span data-value="2">★</span>
-          <span data-value="3">★</span>
-          <span data-value="4">★</span>
-          <span data-value="5">★</span>
-        </div>
-        <input type="hidden" id="ratingValue" required>
-
-        <label>Review</label>
-        <textarea id="reviewText" placeholder="Tulis pengalaman Anda" required></textarea>
-
-        <button type="submit">Kirim Review</button>
-      </form>
-      <div id="reviewList">
-        <h3>Daftar Review</h3>
-      </div>
+  <!-- ===== LAYANAN ===== -->
+<section id="layanan" style="background-color: #fff8e1; padding: 50px 0; text-align: center;">
+  <h2 style="color: #ff9800; font-size: 2em; margin-bottom: 30px;">Layanan Kami</h2>
+  
+  <div class="container" style="
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 20px;
+    max-width: 1600px;
+    margin: auto;
+  ">
+    
+    <!-- Service Rutin -->
+    <div class="card" style="background: white; width: 250px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+      <img src="https://cdn.seva.id/blog/media/2022/10/shutterstock_1235448997-1.jpg" alt="Service Rutin" style="width:100%; border-radius:10px;">
+      <h3 style="color: #ff9800; margin-top: 15px;">Service Rutin</h3>
+      <p>Pemeriksaan dan perawatan berkala agar mobil tetap optimal.</p>
+      <p style="font-weight:bold; color:#ff9800;">Mulai Rp250.000</p>
     </div>
+
+    <!-- Ganti Oli -->
+    <div class="card" style="background: white; width: 250px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+      <img src="https://imgx.gridoto.com/crop/0x0:1483x943/700x465/filters:watermark(file/2017/gridoto/img/watermark_otomotifnet.png,5,5,60)/photo/2021/09/14/20210913_115902_copy_1678x944jp-20210914061757.jpg" alt="Ganti Oli" style="width:100%; border-radius:10px;">
+      <h3 style="color: #ff9800; margin-top: 15px;">Ganti Oli</h3>
+      <p>Gunakan oli berkualitas dengan penggantian cepat dan efisien.</p>
+      <p style="font-weight:bold; color:#ff9800;">Mulai Rp150.000</p>
+    </div>
+
+    <!-- Perbaikan Rem -->
+    <div class="card" style="background: white; width: 250px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+      <img src="https://imgx.gridoto.com/crop/212x102:928x614/700x465/filters:watermark(file/2017/gridoto/img/watermark.png,5,5,60)/photo/2023/07/06/whatsapp-image-2023-06-07-at-23-20230706011151.jpeg" alt="Perbaikan Rem" style="width:100%; border-radius:10px;">
+      <h3 style="color: #ff9800; margin-top: 15px;">Perbaikan Rem</h3>
+      <p>Pastikan sistem rem bekerja maksimal demi keselamatanmu.</p>
+      <p style="font-weight:bold; color:#ff9800;">Mulai Rp200.000</p>
+    </div>
+
+    <!-- Tune Up -->
+    <div class="card" style="background: white; width: 250px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+      <img src="https://otoklix-production.s3.amazonaws.com/uploads/2021/11/cara-tune-up-mobil.jpg" alt="Tune Up" style="width:100%; border-radius:10px;">
+      <h3 style="color: #ff9800; margin-top: 15px;">Tune Up</h3>
+      <p>Optimalkan performa mesin mobil Anda dengan perawatan menyeluruh.</p>
+      <p style="font-weight:bold; color:#ff9800;">Mulai Rp300.000</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- ===== BOOKING SERVICE ===== -->
+  <section id="booking" style="background-color: #fff8e1; padding: 50px 0; text-align: center;">
+  <h2 style="color: #ff9800; font-size: 2em; margin-bottom: 30px;">Booking Service Mobil</h2>
+
+  <form id="bookingForm" style="max-width: 400px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px;">
+    <input type="text" id="nama" placeholder="Nama Anda" required style="padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
+    <input type="text" id="mobil" placeholder="Jenis Mobil" required style="padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
+    <input type="date" id="tanggal" required style="padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
+
+    <!-- Dropdown layanan -->
+    <!-- <select id="layanan" required style="padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
+      <option value="">-- Pilih Jenis Layanan --</option>
+      <option value="Service Rutin">Service Rutin</option>
+      <option value="Ganti Oli">Ganti Oli</option>
+      <option value="Perbaikan Rem">Perbaikan Rem</option>
+      <option value="Tune Up">Tune Up</option>
+      <option value="AC Mobil">Service AC Mobil</option>
+    </select> -->
+
+    <!-- Lokasi penjemputan -->
+    <input type="text" id="lokasi" placeholder="Lokasi Penjemputan (contoh: Jl. Melati No.10, Majalengka)" required style="padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
+
+    <textarea id="keluhan" placeholder="Keluhan / Catatan Tambahan" style="padding: 10px; border-radius: 8px; border: 1px solid #ccc;"></textarea>
+
+    <button type="submit" class="btn" style="background-color: #ff9800; color: white; border: none; padding: 12px; border-radius: 8px; cursor: pointer; font-weight: bold;">
+      Booking via WhatsApp
+    </button>
+  </form>
   </section>
 
-  <section id="tentang">
-    <div class="card">
-      <h2>ℹ️ Tentang Kami</h2>
-      <p>Bengkel Online Nugraha adalah layanan bengkel berbasis web yang memudahkan pelanggan untuk memesan jasa perbaikan kendaraan secara online. Dengan sistem ini, pelanggan dapat memesan layanan darurat, mengetahui estimasi biaya, serta menemukan lokasi bengkel dengan mudah.</p>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Bengkel Nugraha Online - Semua Hak Dilindungi</p>
-  </footer>
-
-  <script>
-    // Toggle menu
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('nav');
-    menuToggle.addEventListener('click', () => {
-      nav.classList.toggle('active');
-    });
-
-    // Review system
-    const form = document.getElementById('reviewForm');
-    const reviewList = document.getElementById('reviewList');
-    const stars = document.querySelectorAll('#starRating span');
-    const ratingValue = document.getElementById('ratingValue');
-
-    stars.forEach(star => {
-      star.addEventListener('click', () => {
-        const value = star.getAttribute('data-value');
-        ratingValue.value = value;
-        stars.forEach(s => s.classList.remove('active'));
-        for(let i=0; i<value; i++){
-          stars[i].classList.add('active');
-        }
-      });
-    });
-
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-
-      const name = document.getElementById('reviewName').value;
-      const text = document.getElementById('reviewText').value;
-      const rating = ratingValue.value;
-
-      if(name && text && rating){
-        const review = document.createElement('div');
-        review.classList.add('review');
-        review.innerHTML = `<strong>${name}</strong> - Rating: ${'★'.repeat(rating)}<p>${text}</p>`;
-        reviewList.appendChild(review);
-
-        form.reset();
-        stars.forEach(s => s.classList.remove('active'));
-      }
-    });
-  </script>
-
-  <script>
-  // Kirim ke WhatsApp
-  const bookingForm = document.getElementById('bookingForm');
-  bookingForm.addEventListener('submit', function(e) {
+<script>
+  document.getElementById("bookingForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
-    // Ambil nilai input
-    const nama = document.getElementById('nama').value;
-    const hp = document.getElementById('hp').value;
-    const layanan = document.getElementById('layanan').value;
-    const catatan = document.getElementById('catatan').value;
-    const lokasi = document.getElementById('lokasi').value;
+    // Ambil data dari form
+    const nama = document.getElementById("nama").value;
+    const mobil = document.getElementById("mobil").value;
+    const tanggal = document.getElementById("tanggal").value;
+    //const layanan = document.getElementById("layanan").value;
+    const lokasi = document.getElementById("lokasi").value;
+    const keluhan = document.getElementById("keluhan").value;
 
-    // Nomor WhatsApp tujuan (ubah sesuai nomor bengkel)
-    const nomorWa ='6285524910802';
+    // Ganti nomor WhatsApp kamu di sini
+    const nomorWA = "6282318196126"; // contoh: 62 (kode Indonesia) + nomor tanpa 0 di depan
 
-    // Template pesan
-    const pesan = `Halo Bengkel Nugraha! Saya ingin melakukan booking service.\n\n` +
-      `Nama: ${nama}\n No. HP: ${hp}\n Layanan: ${layanan}\n Catatan: ${catatan}\n Lokasi: ${lokasi}\n\n` +
-      `Mohon konfirmasi ketersediaan ya. Terima kasih! 🙏`;
+    // Format pesan WhatsApp
+    const pesan = `Halo, saya *${nama}* ingin melakukan booking service mobil.
+    
+📅 Tanggal: ${tanggal}
+🚗 Jenis Mobil: ${mobil}
+📍 Lokasi Penjemputan: ${lokasi}
+🗒️ Catatan: ${keluhan || '-'}
+    
+Terima kasih.`;
 
-    // Encode pesan agar aman di URL
-    const encodedPesan = encodeURIComponent(pesan);
-
-    // Buka WhatsApp dengan pesan otomatis
-    const url = `https://wa.me/${nomorWa}?text=${encodedPesan}`;
-    window.open(url, '_blank');
+    // Buka WhatsApp
+    const url = `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`;
+    window.open(url, "_blank");
   });
 </script>
 
 
+  <!-- ===== LOKASI ===== -->
+  <section id="lokasi" style="padding:50px 0; text-align:center; background-color:#fff8e1;">
+    <h2 style="color:#ff9800; font-size:2em; margin-bottom:20px;">📍 Lokasi Bengkel</h2>
+    <p style="font-size:1.1em; margin-bottom:20px;">Jl. Garut - Tasikmalaya, Cikunir Kabupaten Tasikmalaya</p>
+
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506453.2541055602!2d107.63196467343752!3d-7.391267199999991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f574ba99cd939%3A0x88722d857329b89!2sBengkel%20Mobil%20Nugraha%20Jaya%20Motor%20Bensin%20dan%20Diesel%20serta%20layanan%20darurat%20servis%2024%20jam!5e0!3m2!1sid!2sid!4v1762312572448!5m2!1sid!2sid" 
+      width="100%" 
+      height="400" 
+      style="border:0; border-radius:10px;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+
+
+<!-- ===== REVIEW SECTION ===== -->
+  <section id="review" style="background-color:#fff8e1; padding:60px 0; text-align:center;">
+    <h2 style="color:#ff9800; font-size:2em; margin-bottom:40px;">Ulasan Pelanggan</h2>
+
+    <!-- Form Tambah Review -->
+    <div class="review-form" 
+        style="max-width:420px; margin:0 auto; background:white; padding:30px; border-radius:15px; 
+                box-shadow:0 4px 10px rgba(0,0,0,0.1); text-align:left;">
+      <h3 style="color:#ff9800; text-align:center; margin-bottom:20px;">Tulis Ulasan Anda</h3>
+
+      <form id="reviewForm">
+        <label for="namaReview" style="font-weight:bold; display:block; margin-bottom:5px;">Nama:</label>
+        <input type="text" id="namaReview" placeholder="Nama Anda" required
+              style="width:100%; padding:10px; border-radius:8px; border:1px solid #ccc; margin-bottom:15px;">
+
+        <label for="rating" style="font-weight:bold; display:block; margin-bottom:5px;">Rating:</label>
+        <select id="rating" required
+                style="width:100%; padding:10px; border-radius:8px; border:1px solid #ccc; margin-bottom:15px;">
+          <option value="">-- Pilih Rating --</option>
+          <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+          <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+          <option value="⭐⭐⭐">⭐⭐⭐</option>
+          <option value="⭐⭐">⭐⭐</option>
+          <option value="⭐">⭐</option>
+        </select>
+
+        <label for="pesanReview" style="font-weight:bold; display:block; margin-bottom:5px;">Ulasan:</label>
+        <textarea id="pesanReview" placeholder="Tulis ulasan Anda..." required
+                  style="width:100%; padding:10px; border-radius:8px; border:1px solid #ccc; margin-bottom:20px; min-height:100px;"></textarea>
+
+        <button type="submit" 
+                style="background-color:#ff9800; color:white; border:none; padding:12px 20px; border-radius:8px; 
+                      cursor:pointer; font-weight:bold; width:100%; font-size:1em;">
+          Kirim Ulasan
+        </button>
+      </form>
+    </div>
+
+    <!-- Tempat Review Baru Akan Muncul -->
+    <div id="reviewContainer" 
+        style="display:flex; justify-content:center; flex-wrap:wrap; gap:25px; margin-top:40px;">
+    </div>
+  </section>
+
+<script>
+  // Script untuk menampilkan review baru langsung di bawah form
+  document.getElementById("reviewForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const nama = document.getElementById("namaReview").value;
+    const rating = document.getElementById("rating").value;
+    const pesan = document.getElementById("pesanReview").value;
+
+    const reviewContainer = document.getElementById("reviewContainer");
+
+    // Buat elemen card baru
+    const card = document.createElement("div");
+    card.classList.add("review-card");
+    card.style.background = "white";
+    card.style.width = "280px";
+    card.style.padding = "25px";
+    card.style.borderRadius = "15px";
+    card.style.boxShadow = "0 4px 8px rgba(0,0,0,0.1)";
+    card.innerHTML = `
+      <p style="font-size:1.2em;">${rating}</p>
+      <p style="font-style:italic;">"${pesan}"</p>
+      <span style="display:block; margin-top:10px; font-weight:bold; color:#555;">- ${nama}</span>
+    `;
+
+    // Tambahkan ke container
+    reviewContainer.appendChild(card);
+
+    // Reset form
+    document.getElementById("reviewForm").reset();
+  });
+</script>
+
+
+<!-- ===== Script Tambah Review Dinamis ===== -->
+<script>
+  document.getElementById("reviewForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const nama = document.getElementById("namaReview").value.trim();
+    const rating = document.getElementById("rating").value;
+    const pesan = document.getElementById("pesanReview").value.trim();
+
+    if (!nama || !rating || !pesan) {
+      alert("Harap isi semua kolom ulasan terlebih dahulu!");
+      return;
+    }
+
+    // Buat elemen review baru
+    const newCard = document.createElement("div");
+    newCard.classList.add("review-card");
+    newCard.style.background = "white";
+    newCard.style.width = "280px";
+    newCard.style.padding = "20px";
+    newCard.style.borderRadius = "15px";
+    newCard.style.boxShadow = "0 4px 8px rgba(0,0,0,0.1)";
+    newCard.innerHTML = `
+      <p>${rating}</p>
+      <p>"${pesan}"</p>
+      <span>- ${nama}</span>
+    `;
+
+    // Tambahkan ke container review
+    document.querySelector(".review-container").appendChild(newCard);
+
+    // Reset form
+    document.getElementById("reviewForm").reset();
+
+    alert("Terima kasih! Ulasan Anda telah dikirim.");
+  });
+</script>
+
+
+  <!-- ===== TENTANG KAMI ===== -->
+  <section id="tentang">
+    <h2 data-animate>Tentang Kami</h2>
+    <p data-animate>
+      Bengkel NUgraha berdiri sejak 2010, berkomitmen memberikan pelayanan terbaik
+      untuk kendaraan roda dua. Kami percaya, motor sehat bikin perjalananmu lebih aman
+      dan nyaman.
+    </p>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Bengkel Nugraha. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
