@@ -7,7 +7,7 @@ document.getElementById("bookingForm").addEventListener("submit", function(e) {
   const tanggal = document.getElementById("tanggal").value;
   const keluhan = document.getElementById("keluhan").value;
 
-  const pesan = `Halo Bengkel Cemerlang! Saya ${nama} ingin booking service untuk motor ${motor} pada tanggal ${tanggal}.%0A%0AKeluhan: ${keluhan}`;
+  const pesan = `Halo Bengkel Nugraha! Saya ${nama} ingin booking service untuk motor ${motor} pada tanggal ${tanggal}.%0A%0AKeluhan: ${keluhan}`;
   const nomorWA = "6281234567890"; // Ganti dengan nomor WhatsApp bengkel kamu
 
   window.open(`https://wa.me/${nomorWA}?text=${pesan}`, "_blank");

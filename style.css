@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-sSerif;
   background-color: var(--white);
   color: #333;
   scroll-behavior: smooth;
